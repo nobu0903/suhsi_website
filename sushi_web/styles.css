@@ -1,0 +1,376 @@
+/* styles.css */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.hero-text {
+    font-size: 3rem;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.hero-text.fade-out {
+    opacity: 0;
+}
+
+.fixed-title {
+    position: fixed;
+    top: 56px; /* ナビゲーションバーの下に配置 */
+    width: 100%;
+    background-color: #2C3E50;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+/* 追加するスタイル */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay img {
+  display: block;
+}
+
+.text-overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.kv-slider__btn {
+    margin: 20px auto 0;
+}
+.m-btn01__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 64px;
+    color: #fff;
+    background-color: #111;
+    border-radius: 46px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    line-height: 1.2;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #FFFACD;
+  }
+  
+  .card {
+    margin: 5px;
+  }
+
+
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+  }
+  
+  body {
+    background: #fff;
+    font: 400 12px/1.8 "Open Sans", sans-serif;
+    color: #666;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  iframe {
+    border: 0;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-left {
+    text-align: left !important;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  .leftauto {
+    right: 0 !important;
+    left: auto !important;
+  }
+
+/*link with kodawari.html*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: none;
+    padding: 0;
+}
+
+.image-section {
+    flex: 1;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* スクリーンが小さいときのスタイル */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-section {
+        height: 150px;
+    }
+    .text-section {
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* 共通スタイル */
+.l-contents {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .intro, .obsession {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .obsession__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .obsession__item {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: row; /* 横並びにする */
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .m-bunner {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* スクリーンが小さいときのスタイル */
+  @media (max-width: 768px) {
+    .obsession__item {
+      flex: 1 1 100%;
+    }
+  }
+
+.obsession__bg {
+    flex: 1; /* 画像部分の幅を設定 */
+    height: 200px; /* 高さを設定 */
+    background-size: cover;
+    background-position: center;
+}
+
+.obsession__box {
+    display: flex; /* フレックスボックスを使用 */
+    flex: 1; /* 説明部分の幅を設定 */
+}
+
+.obsession__box__in {
+    flex: 1; /* 説明部分の幅を設定 */
+    padding: 10px; /* パディングを追加 */
+}
+
+.image-obsession1 {
+    flex: 1;
+    background-image: url('image/sushi.jpeg'); /* こだわりのコンセプトの画像 */
+    height: 500px; /* 高さを設定 */
+    background-size: cover; /* 画像をカバー */
+    background-position: center; /* 画像の位置を中央に */
+}
+
+.image-obsession2 {
+    flex: 1;
+    background-image: url('image/tennai.jpeg'); /* こだわりのコンセプトの画像 */
+    height: 500px; /* 高さを設定 */
+    background-size: cover; /* 画像をカバー */
+    background-position: center; /* 画像の位置を中央に */
+}
+
+.image-obsession3 {
+    flex: 1;
+    background-image: url('image/sushi_master2.jpg'); /* こだわりのコンセプトの画像 */
+    height: 500px; /* 高さを設定 */
+    background-size: cover; /* 画像をカバー */
+    background-position: center; /* 画像の位置を中央に */
+}
+
+.mb-3 {
+    background-color: #D3D3D3;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.image-section, .text-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+.image-section {
+    background: url('image/slide_image/best_sushi_restaurant.png') center/cover no-repeat;
+}
+.text-section {
+    background-color: #FFFACD;
+    padding: 20px;
+    text-align: center;
+}
+.text-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .image-section, .text-section {
+        height: auto;
+    }
+}
+
+/*---------------------------------
+    メールフォーム
+---------------------------------*/
+#formWrap{
+    width: 100%;
+}
+.form_inner{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFF;
+    min-width: 768px;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    -webkit-border-radius:20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; 
+}
+.form_inner h3{
+    font-size: 24px;
+    color: #00a0e9;
+    border-bottom: 1px solid #00a0e9;
+    padding-left: 6.25px;
+    padding-bottom: 12.5px;
+    margin-bottom: 50px;
+}
+.form_inner p{
+    margin: 25px 0;
+}
+
+.form_inner p a{
+    color: #00a0e9;
+}
+#formWrap {
+  width:800px;
+  margin:0 auto;
+  color:#555;
+  line-height:150%;
+  font-size:85%;
+}
+table.formTable{
+  width:100%;
+  margin:0 auto;
+  border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+  border:1px solid #ccc;
+  padding:12.5px;
+}
+table.formTable th{
+  widows: 40%;
+  font-weight:normal;
+  background:#efefef;
+  text-align:right;
+}
+input,textarea{
+    padding: 6.25px 12.5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #CCCCCC;
+}
+.form_require {
+    color: #ED1E79;
+    font-size: 12px;
+}
+
+.top-space {
+    margin-top: 40px; /* 2行分のスペースを作る */
+}
