@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>sushi_web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>kodawari</title>
+    <style>
+       
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 80vh;
+        }
+        .image-section, .text-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-section {
+            background: url('image/slide_image/best_sushi_restaurant.png') center/cover no-repeat;
+        }
+        .text-section {
+            background-color: #FFFACD;
+            padding: 20px;
+            text-align: center;
+        }
+        .text-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .text-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .image-section, .text-section {
+                height: 50vh;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+
+     <!-- ナビゲーションバーの追加 -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">俺たちの寿司屋</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href='/sushi_web/index.html'>ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">こだわり</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='/sushi_web/menu.html'>メニュー</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href='/sushi_web/otoiawase.html'>お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="image-obsession1"></div>
+        <div class="text-section">
+            <section class="intro">
+                <div class="inner">
+                    <h2 class="intro__tit m-tit01"><span>新鮮なネタ</span>を目指して。<br>旨さのための、<br class="forSp">譲れない<span>こだわり</span>。</h2>
+                    <p class="intro__txt">とにかく旨いと評判のネタは、<br class="forSp">地元北海道の魚介を、<br>その都度さばいて出すから<br class="forSp">新鮮な素材をより新鮮に味わえます。<br>素材そのままでも十分旨い新鮮なネタ！</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="image-obsession2"></div>
+        <div class="text-section">
+            <section class="intro">
+                <div class="inner">
+                    <h2 class="intro__tit m-tit01"><span>落ち着いた店内</span></h2>
+                    <p class="intro__txt"><br>和の風情を感じる静かな空間で、<br>ゆっくりとお食事を<br>楽しむことができます。<br>心落ち着くインテリアと<br>温かみのある照明が、<br>特別なひと時を演出します。</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="image-obsession3"></div>
+        <div class="text-section">
+            <section class="intro">
+                <div class="inner">
+                    <h2 class="intro__tit m-tit01"><span>熟練の職人が</span><br class="forSp">一貫一貫丁寧に</span>。</h2>
+                    <p class="intro__txt">お客様に<br>最高の食体験を提供するため、<br>技術と経験を活かし、<br>最高の一貫をお届けします。</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href='/sushi_web/index.html' class="nav-link p-0 text-body-secondary">ホーム</a></li>
+            <li class="nav-item mb-2"><a href='/sushi_web/menu.html' class="nav-link p-0 text-body-secondary">メニュー</a></li>
+            <li class="nav-item mb-2"><a href='/sushi_web/kodawari.html' class="nav-link p-0 text-body-secondary">コンセプト</a></li>
+            <li class="nav-item mb-2"><a href='/sushi_web/otoiawase.html' class="nav-link p-0 text-body-secondary">お問い合わせ</a></li>
+          </ul>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
+
+
